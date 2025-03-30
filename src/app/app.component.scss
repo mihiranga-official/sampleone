@@ -4,18 +4,26 @@ padding: 0;
 }
 
 .main-divider{
-    border: 3px solid lightgray;
+ 
+    margin-top: 5px;
+    margin-bottom: 5px;
+   // border: 2px solid lightgray;
+    text-align: center;
 }
 .second-divder{
+
     grid-template-columns: 1fr 1fr ;
   text-align: center;
 }
 a{
+    font-size: x-large;
+
+    color: antiquewhite;
     text-decoration: none;
     
 }
 .body-divider{
-    border: 2px solid lightgray;
+    //border: 2px solid lightgray;
     text-align: center;
    
 }
@@ -48,8 +56,11 @@ a{
     
 }
 .footer{
-    margin-top: 5px;
+    margin-top: 70px;
     margin-bottom: 20px;
-    border: 2px solid lightgray;
+    //border: 2px solid lightgray;
     text-align: center;
+}
+.logo-social{
+
 }
