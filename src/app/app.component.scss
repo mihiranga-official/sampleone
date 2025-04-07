@@ -4,62 +4,137 @@ body {
 }
 
 .main-divider {
-  margin-top: 5px;
+  background-color: rgb(10, 155, 199);
+ 
   margin-bottom: 5px;
   // border: 2px solid lightgray;
   text-align: center;
 }
 .second-divder {
   display: flex;
+
   word-spacing: 10px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   text-align: center;
 }
-a {
-  font-size: large;
+.headerfonty{
+  margin-top: 5%;
+  margin-left: 5%;
+  font-weight: 800;
 
-  color: antiquewhite;
+  
+}
+.ourservice{
+  color: white;
+}
+a {
+  font-size: xx-large;
+  color: rgb(14, 13, 13);
   text-decoration: none;
 }
 .body-divider {
   //border: 2px solid lightgray;
   text-align: center;
 }
-.main-titele {
-  text-align: center;
-}
+
 .main-titele {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
+  font-size: xx-large;
 }
 .sub-titele {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: larger;
+  font-size: xx-large;
 }
 .social-media {
   margin-top: 5px;
 }
 .whatsapp-btn {
-  width: 40%;
-
+  width: 700px;
+  height: 130px;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 12px;
   padding: 15px 32px;
   cursor: pointer;
   font-weight: 600;
-  font-size: larger;
+  font-size: xx-large;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 .footer {
-  margin-top: 70px;
-  margin-bottom: 20px;
-  //border: 2px solid lightgray;
+  margin-top: 25%;
   text-align: center;
+  background-color: rgb(10, 155, 199);
+  font-size: xx-large;
 }
 .logo-social {
 }
 .anch {
   color: black;
+}
+.footer-text{
+  background-color: rgb(10, 155, 199);
+}
+.carousel{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+.card{
+  margin-top: 5%;
+  border: 2px solid gainsboro;
+  margin-left: 4% ;
+text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate {
+
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.card-title{
+  font-size: large;
+}
+.card-text{
+  margin-top: 10px;
+}
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+.span{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+}
+span{
+  font-weight: 600;
 }
